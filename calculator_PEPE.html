@@ -6,11 +6,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet"> <!-- Link to the compiled SCSS file -->
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <div class="calculator">
      <h2>Cryptocurrency Calculator</h2>
+     <h3>by Duledu :)</h3>
      <input type="text" id="cryptoName" placeholder="Cryptocurrency Name">
      <input type="number" id="currentPrice" placeholder="Current Price">
      <input type="number" id="marketCap" placeholder="Market Cap">
@@ -18,21 +19,20 @@
      <input type="number" id="circulatingSupply" placeholder="Circulating Supply">
      <input type="number" id="priceChange24h" placeholder="24h Price Change (%)">
      <input type="number" id="sentimentScore" step="0.1" placeholder="Sentiment Score (-1 to 1)">
-     <!-- ... [rest of your HTML before the calculator inputs] ... -->
+
+     <button onclick="calculateCryptoPrice()">Calculate</button>
 
 
-<button onclick="calculateCryptoPrice()">Calculate</button>
-<div id="result"></div>
-<div id="futurePrices"></div> <!-- Container for future prices -->
 
-<!-- ... [rest of your HTML] ... -->
+      <div id="futurePrices"></div>
+
 
 
      <div id="result"></div>
      <div id="futurePriceProjection"></div>
      <div id="sentimentAdjustedPrice"></div>
  </div>
-    <script src="script.js"></script> <!-- Ensure this points to your JavaScript file -->
+    <script src="script.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
